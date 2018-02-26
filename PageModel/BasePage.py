@@ -5,7 +5,7 @@ from Utilitys.Utils import Utils
 
 class BasePage():
 
-  def __init__(self,plateform='Android'):
+  def __init__(self,plateform=None):
     browserManage= BrowserManage()
     self.browser = browserManage.setBrowser(plateform)
 

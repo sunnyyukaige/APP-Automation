@@ -10,7 +10,7 @@ Feature: EFPv2 Login functionality validation
   @ios
   Scenario Outline: Validate the login functionality through mobile UI
     Given I click login on EFP app login page
-    When I input <Username> and <Password> with
+    When I input <Username> and <Password> with login
     Then I can go to Home page
 
     Examples: Login

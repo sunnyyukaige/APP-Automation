@@ -7,9 +7,7 @@ use_step_matcher("re")
 
 @step("I can go to Message page")
 def step_impl(context):
-   context.homePage=HomePage()
    context.homePage.GoToMessage(context.platform)
-   context.messagePage=MessagePage()
    context.messagePage.GotoGroup(context.platform)
 
 

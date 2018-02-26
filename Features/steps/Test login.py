@@ -7,7 +7,6 @@ use_step_matcher("re")
 
 @given("I click login on EFP app login page")
 def step_impl(context):
-    context.loginPage = LoginPage()
     context.loginPage.GotoLogin(context.platform)
 
 
@@ -20,7 +19,6 @@ def step_impl(context, Username, Password):
 
 @then("I can go to Home page")
 def step_impl(context):
-    context.homePage = HomePage()
     assert (context.homePage.HomeTitle(context.platform).text=='Home')
 
 
